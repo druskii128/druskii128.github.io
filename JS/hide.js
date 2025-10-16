@@ -1,5 +1,5 @@
     var urlObj = new window.URL(window.location.href);
-    var url = "https://games-site.github.io/";
+    var url = "https://druskii64.github.io/";
  
     if (url) {
         var win;
@@ -19,7 +19,7 @@
                 iframe.style.margin = '0';
                 iframe.src = url;
                 win.document.body.appendChild(iframe);
-                location.replace("https://classroom.google.com/");
+                location.replace("https://desmos.com/calculator/");
             }
         };
     }
