@@ -1,62 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<!-- Google tag (gtag.js) -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desmos | Graphing Calculator</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png" type="image/x-icon">
+<meta name="description" content="We do got games on our phone.">
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F08N1KVKEF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-F08N1KVKEF');
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9261158347206771"
-     crossorigin="anonymous"></script>
-</script>
-	<link rel="stylesheet" href="styles.css">
-    <title>Desmos | Graphing Calculator</title>
-	<link rel="icon" type="image/x-icon" href="logo.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
-    <meta property="og:description" content="We do got games on our phone." />
-    <meta name="description" content="We do got games on our phone." />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head> 
-  <body onload="startTime()">
-  
-  <div class="menubar">
-  <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="flash.html">Other</a>
-			  <div class="topnav-right">
-  <a href="https://forms.gle/eRT37jLokfETBNUs6">Request</a>
-	<a>Last Updated: 10/20/2025</a>
-  </div>
-  </div>
-  </div>
-  
-			<h1 class="text-center">druskii64</h1>
+<!-- Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9261158347206771" crossorigin="anonymous"></script>
+</head>
+<body onload="startTime()">
 
+<header class="menubar">
+  <nav class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="flash.html">Other</a>
+    <div class="topnav-right">
+      <a href="https://forms.gle/eRT37jLokfETBNUs6">Request</a>
+      <span>Last Updated: 10/20/2025</span>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1 class="title text-center">druskii64</h1>
+
+  <div class="search-container">
+    <input class="search-box" id="search-box" type="search" placeholder="Search for Games" onkeyup="searching(this)" onfocus="fun(this)">
   </div>
-  </div>
-   <script src="JS/hide.js"></script>
-  <script src="JS/clock.js"></script>
-  <script src="JS/search.js"></script>
-  <script src="JS/size.js"></script>
-  <nav>
-  <div class="nav-container">
-    <div class="search-container">
-      <input class="search-box" id="search-box" type="search"  onkeyup="searching(this)" onfocus="fun(this)" placeholder="Search for Games">
-      <div class="search-results" id="search-results">
-	  
-      <div id="all" class="flex-container">
-	            <a href="projects/1v1.lol/index.html" class="game-link container">
-              <div class="game-tile-popular">
-                  <img class="game-icon" src="projects/1v1.lol/splash.png" alt="icon" width="360" height="360">
-                  <h1 class="game-title">1v1.lol</h1>
-              </div>
-          </a>
-	  
+
+  <div id="games" class="flex-container">
+
+    <a href="projects/bitlife/index.html" class="game-link">
+      <div class="game-tile-popular">
+        <img class="game-icon" src="projects/bitlife/thumb.png" alt="Bitlife">
+        <h2 class="game-title">Bitlife</h2>
+      </div>
+    </a>
+
+    <a href="projects/drift-boss/index.html" class="game-link">
+      <div class="game-tile-popular">
+        <img class="game-icon" src="projects/drift-boss/drift-boss.png" alt="Drift Boss">
+        <h2 class="game-title">Drift Boss</h2>
+      </div>
+    </a>
+
+    <a href="projects/slope/index.html" class="game-link">
+      <div class="game-tile-popular">
+        <img class="game-icon" src="projects/slope/slope4.jpeg" alt="Slope">
+        <h2 class="game-title">Slope</h2>
+      </div>
+    </a>
+
+    <!-- alphabetical order for the rest -->
+    <a href="projects/1v1.lol/index.html" class="game-link">
+      <div class="game-tile">
+        <img class="game-icon" src="projects/1v1.lol/splash.png" alt="1v1.lol">
+        <h2 class="game-title">1v1.lol</h2>
+      </div>
+    </a>
+    
           <a href="projects/2048/index.html" class="game-link container">
               <div class="game-tile">
                   <img class="game-icon" src="projects/2048/thumb.png" alt="icon" width="360" height="360" />
@@ -657,13 +669,14 @@
                   <h1 class="game-title">Vex 6</h1>
               </div>
           </a>
-		  
-		</div>
-	</div>
-    </div>
-    <div class="links-container"></div>
-  </div>
-</nav>
 		
-  </body>
+
+  </div>
+</main>
+
+<script src="JS/hide.js"></script>
+<script src="JS/clock.js"></script>
+<script src="JS/search.js"></script>
+<script src="JS/size.js"></script>
+</body>
 </html>
