@@ -262,3 +262,95 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* ========================= */
+/* CHANGELOG MODAL STYLES */
+/* ========================= */
+.changelog-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 15, 0.75);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 100;
+}
+
+.changelog-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.changelog-content {
+  background: rgba(25, 25, 30, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  width: 90%;
+  max-width: 550px;
+  padding: 30px 26px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  animation: popupFade 0.5s ease;
+}
+
+.changelog-content h2 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.changelog-content p {
+  color: #cfcfcf;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.changelog-content ul {
+  margin-left: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.changelog-content li {
+  margin-bottom: 8px;
+}
+
+.close-changelog {
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-changelog:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* animation for modal popup */
+@keyframes popupFade {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
