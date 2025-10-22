@@ -138,7 +138,7 @@ header {
 
 .game-tile:hover .game-icon, 
 .game-tile-popular:hover .game-icon {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .game-title {
@@ -158,6 +158,11 @@ header {
   color: #ffffff;
 }
 
+.game-icon {
+    height: 175px;
+    width:  175px;
+    
+}
 .text-center {
   text-align: center;
 }
