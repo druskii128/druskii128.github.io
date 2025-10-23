@@ -33,9 +33,17 @@
 <main>
   <h1 class="title text-center">druskii64</h1>
 
-  <div class="search-container">
-    <input class="search-box" id="search-box" type="search" placeholder="Search for Games" onkeyup="searching(this)" onfocus="fun(this)">
-  </div>
+<nav>
+    <div class="nav-container">
+      <div class="search-container">
+        <input class="search-box" id="search-box" type="search" onkeyup="searching(this)" onfocus="fun(this)" placeholder="Search for Games">
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- place this AFTER everything else -->
+  <script src="JS/search.js"></script>
 
   <div id="games" class="flex-container">
 
